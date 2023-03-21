@@ -434,6 +434,7 @@ main
     border-radius: 10px;
     font-size: 20px;
     display: flex;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
@@ -454,11 +455,6 @@ main
 {
     filter: invert(100%) sepia(0%) saturate(7479%) hue-rotate(70deg) brightness(99%) contrast(107%);
     pointer-events: none;
-}
-
-.add-to-cart-text
-{
-    flex-basis: 40%;
 }
 
 .light-box-bg
