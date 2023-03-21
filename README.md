@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Link
 
-- Live Site URL: [Add live site URL here](https://brendononeill.github.io/Frontend-Mentor/)
+- Live Site URL: [My Solution](https://brendononeill.github.io/Frontend-Mentor/)
 
 ## My process
 
