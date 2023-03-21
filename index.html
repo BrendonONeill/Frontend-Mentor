@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="main-nav">
+        <div class="main-nav-logo">
+          <div class="main-nav-menu-section">
+            <button aria-label="navigation menu" class="menu-button"><img src="images/icon-menu.svg" height="16px" width="15px" alt="navbar menu"></button>
+          </div>
+          <div class="main-nav-logo-section">
+            <img src="images/logo.svg" height="20px" alt="sneaker's logo">
+          </div>
+          <div class="nav-list">
+            <ul>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-nav-cart">
+          <div class="main-nav-cart-section">
+            <div class="cart-badge">0</div>
+            <button aria-label="open cart" class="cart-button"><object height="22px" width="22px" data="images/icon-cart.svg"> </object></button>
+          </div>
+          <div class="main-nav-avatar-section">
+            <img class="avatar" src="images/image-avatar.png" height="25px" width="25px" alt="user avatar">
+          </div>
+        </div>
+    </nav>
+    <div class="offCanvas-bg"></div>
+    <div class="offCanvas">
+      <div class="offCanvas-header">
+        <button aria-label="close off canvas menu" class="close-menu-button"><img src="images/icon-close.svg" alt="close menu x"></button>
+      </div>
+      <div class="offCanvas-content">
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    </div>
+  </header>
+
+  
+  <main>
+    <div class="modal">
+      <div class="modal-header">
+        <p>Cart</p>
+      </div>
+      <div class="modal-body">
+        <div class="items-in-cart hide">
+          <div class="modal-item">
+            <img src="images/image-product-1-thumbnail.jpg" height="60px" width="60px" alt="shoes on sales">
+          </div>
+          <div class="modal-text">
+            <p>Fall Limited Edition Sneakers</p>
+            <p class="cartPrice">test</p><span class="cartCal">test</span>
+          </div>
+          <div class="modal-delete">
+            <button aria-label="delete from cart" class="bin"><img src="images/icon-delete.svg" alt=" delete button"></button>
+          </div>
+        </div>
+        
+        <div class="no-items-in-cart">
+          <div>
+            <p>Your cart is empty.</p>
+          </div>
+      </div>
+      </div>
+
+     
+
+      <div class="modal-footer hide">
+        <button aria-label="checkout">Checkout</button>
+      </div>
+    </div>
+    <div class="main-container">
+      <div class="main-container-image-section">
+        <img class="product-image" src="images/image-product-1.jpg" alt="shoes on sale">
+        <button aria-label="previous image" class="image-filter prev"><img src="images/icon-previous.svg" height="12px" width="8px" alt="previous arrow"></button>
+        <button aria-label="next image" class="image-filter next"><img src="images/icon-next.svg" height="12px" width="8px" alt="next arrow"></button>
+      </div>
+      <div class="main-container-image-section-big">
+        <button aria-label="open lightbox" class="big-main-image"><img src="images/image-product-1.jpg" width="450px" height="450px" alt="shoes on sale"></button>
+        <div class="big-sub-images">
+          <button aria-label="preview first product image" class="image-button-main"><div class="image-fade image-fade-clicked" id="1"></div><img src="images/image-product-1-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+          <button aria-label="preview second product image" class="image-button-main"><div class="image-fade" id="2"></div><img src="images/image-product-2-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+          <button aria-label="preview third product image" class="image-button-main"><div class="image-fade" id="3"></div><img src="images/image-product-3-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+          <button aria-label="preview fourth product image" class="image-button-main"><div class="image-fade" id="4"></div><img src="images/image-product-4-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+          
+        </div>
+      </div>
+      <div class="main-container-text-section">
+      <h2>Sneaker Company</h2>
+      <h3>Fall Limited Edition Sneakers</h3>
+      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+      durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+    <div class="price-section">
+      <p class="price">$125.00</p>
+      <p class="sale">50%</p>
+      <p class="discount">$250.00</p>
+    </div>
+    <div class="buttons">
+    <div class="amount-button">
+      <button aria-label="minus product to add to cart" class="minus"><object data="images/icon-minus.svg"> </object></button>
+      <p class="number">0</p>
+      <button aria-label="plus product to add to cart" class="plus"><object data="images/icon-plus.svg"> </object></button>
+      </div>
+      <button aria-label="add to cart" class="add-to-cart"><div class="center-svg"> <object class="" data="images/icon-cart.svg"> </object></div><p class="add-to-cart-text">Add to cart</p></button>
+      </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="light-box-bg hide">
+    <div class="light-box-container">
+      <div class="light-box-container-close"><button class="lb-close"><object height="30px" width="30px" data="images/icon-close.svg"></object></button></div>
+      <div class="light-box-container-img"><img src="images/image-product-1.jpg" width="450px" height="450px" alt="shoes on sale">
+        <button aria-label="" class="lb-test lb-prev"><img src="images/icon-previous.svg" height="12px" width="8px" alt="previous arrow"></button>
+        <button aria-label="" class="lb-test lb-next"><img src="images/icon-next.svg" height="12px" width="8px" alt="next arrow"></button></div>
+      <div class="light-box-container-buttons">
+        <button aria-label="preview first product image" class="light-box-container-button"><div class="image-fade" data-id="1"></div><img src="images/image-product-1-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+        <button aria-label="preview second product image" class="light-box-container-button"><div class="image-fade" data-id="2"></div><img src="images/image-product-2-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+        <button aria-label="preview third product image" class="light-box-container-button"><div class="image-fade" data-id="3"></div><img src="images/image-product-3-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+        <button aria-label="preview fourth product image" class="light-box-container-button"><div class="image-fade" data-id="4"></div><img src="images/image-product-4-thumbnail.jpg" width="88px" height="88px" alt="another angle of the shoes"></button>
+      </div>
+    </div>
+
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Brendon O'Neill</a>.
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
